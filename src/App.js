@@ -52,7 +52,7 @@ function App() {
     <>
       <div>
         <Player
-          src='https://lottie.host/716feba2-dcf4-4431-b368-ff04f3342193/9UApqxjgzC.json'
+          src='https://lottie.host/948a9a01-d25e-44a6-aa64-e57c3d699a14/jtIpkCIfAn.json'
           className="player"
           loop
           autoplay
@@ -75,6 +75,13 @@ function App() {
               <p>Một năm đại thành công và thịnh vượng</p>
               <p>Gặt hái được những điều em mong muốn nheee</p>
               <p>Mong những điều tốt đẹp đến bên em và gia đình <FaRegKissWinkHeart style={{ marginRight: '5px' }} /><FaRegKissWinkHeart /></p>
+              <Player
+                src='https://lottie.host/31c60b4c-00a5-4f5b-aec4-9b768a94c3ee/4JCNa2kRqm.json'
+                className="player"
+                loop
+                autoplay
+                style={{ width: '200px', height: '250px' }}
+              />
             </div>
 
           </div>
@@ -115,6 +122,13 @@ function App() {
               </p>
               <p>Cưng như em bé...</p>
               <p>Love u babe <FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /></p>
+              <Player
+                src='https://lottie.host/987be7e7-2d23-49c9-8ac5-482d21cab74f/yp6xZU49lg.json'
+                className="player"
+                loop
+                autoplay
+                style={{ width: '200px', height: '250px' }}
+              />
             </div>
           </div>
         )}
