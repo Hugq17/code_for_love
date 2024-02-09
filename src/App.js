@@ -37,6 +37,7 @@ function App() {
   };
   const openPopup2 = () => {
     setPopupOpen2(!isPopupOpen2);
+
   };
 
   // Hàm đóng popup
@@ -57,7 +58,9 @@ function App() {
           autoplay
           style={{ width: '200px', height: '250px' }}
         />
-
+        <div style={{ display: 'flex', justifyContent: 'center', fontFamily: 'sans-serif' }}>
+          <p >Gửi tặng Ngọc Nghi</p>
+        </div>
         <div class="button-container">
           <button class="my-button" onClick={() => openPopup()} style={{ backgroundColor: '#F28585', marginRight: '25px' }}>Happy</button>
           <button class="my-button" onClick={toggleGrid} style={{ backgroundColor: '#FFA447', marginRight: '25px' }}>New</button>
@@ -66,7 +69,7 @@ function App() {
         </div>
         {isPopupOpen && (
           <div className="popup" >
-            <div className="popup-content">
+            <div className="popup-content" style={{ fontFamily: 'sans-serif' }}>
               <p>Gửi em Ngọc Nghi cute dth xinh đẹp</p>
               <p>Một năm mới tràn đầy sức khỏe</p>
               <p>Một năm đại thành công và thịnh vượng</p>
@@ -102,7 +105,7 @@ function App() {
         )}
         {isPopupOpen2 && (
           <div className="popup" >
-            <div className="popup-content">
+            <div className="popup-content" style={{ fontFamily: 'sans-serif' }}>
               <p>
                 Lời cuối !!! Cảm ơn em đã cùng anh qua bao
                 nhiu khó khăn vất vả mỗi lần cãi vả ko phải để ghét nhau mà để hỉu nhau hơn. Chuyện cũ ta bỏ qua hahaa
