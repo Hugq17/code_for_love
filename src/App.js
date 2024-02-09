@@ -105,12 +105,12 @@ function App() {
             <div className="popup-content">
               <p>
                 Lời cuối !!! Cảm ơn em đã cùng anh qua bao
-                nhiu khó khăn vất vả mỗi lần cãi vả ko phải đề ghét nhau mà để hỉu nhau hơn. Chuyện cũ ta bỏ qua hahaa
+                nhiu khó khăn vất vả mỗi lần cãi vả ko phải để ghét nhau mà để hỉu nhau hơn. Chuyện cũ ta bỏ qua hahaa
                 để cùng chào đón năm mới,
                 hy vọng sẽ đón nhìu năm hơn nữa nheeee.
               </p>
               <p>Cưng như em bé...</p>
-              <p>Love u baby <FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /></p>
+              <p>Love u babe <FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /><FaHeart style={{ marginRight: '5px' }} /></p>
             </div>
           </div>
         )}

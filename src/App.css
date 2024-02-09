@@ -79,3 +79,28 @@
   /* Tự động tính toán chiều cao dựa trên tỷ lệ của hình ảnh */
   margin-top: 50px;
 }
+
+@media screen and (max-width: 414px) and (max-height: 896px) {
+  .popup {
+    width: 250px;
+    /* Thay đổi chiều rộng của popup */
+    padding: 15px;
+    /* Thay đổi padding của popup */
+    margin-top: 30px;
+    /* Thay đổi margin-top của popup */
+    border-radius: 15px;
+    /* Thay đổi border-radius của popup */
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Thay đổi cài đặt cột của lưới */
+    grid-gap: 15px;
+    /* Thay đổi khoảng cách giữa các ô trong lưới */
+  }
+
+  .grid-item img {
+    margin-top: 30px;
+    /* Thay đổi margin-top của hình ảnh trong ô lưới */
+  }
+}
