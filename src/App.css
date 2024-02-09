@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.my-button {
+  /* Màu nền */
+  border: none;
   color: white;
+  /* Màu chữ */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  /* Bo góc */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Đổ bóng */
+  transition-duration: 0.4s;
+  /* Thời gian chuyển đổi */
 }
 
-.App-link {
-  color: #61dafb;
+.my-button:hover {
+  background-color: #45a049;
+  /* Màu nền khi hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* Cách đều các phần tử */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  /* Cách đều các phần tử */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  /* border: 1px solid #000; */
+  width: 300px;
+  position: fixed;
+  /* Đảm bảo popup giữ vị trí tuyệt đối trên màn hình */
+  top: 50%;
+  /* Đưa popup lên trên 50% chiều cao của màn hình */
+  left: 50%;
+  /* Đưa popup vào giữa 50% chiều rộng của màn hình */
+  transform: translate(-50%, -50%);
+  /* Dịch chuyển popup ngược lại 50% kích thước của chính nó, làm cho popup nằm chính giữa màn hình */
+  background-color: #fff;
+  /* Màu nền của popup */
+  padding: 20px;
+  /* Thêm padding cho nội dung của popup */
+  z-index: 9999;
+  /* Đảm bảo popup hiển thị trên các phần tử khác */
+  box-shadow: 0 20px 20px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Tạo các cột có chiều rộng tối thiểu 200px và co giãn theo kích thước của lưới */
+  grid-gap: 20px;
+  /* Khoảng cách giữa các ô trong lưới */
+}
+
+.grid-item {
+  overflow: hidden;
+  /* Ẩn phần vượt ra ngoài của hình ảnh */
+}
+
+.grid-item img {
+  width: 100%;
+  /* Đặt chiều rộng của hình ảnh là 100% của ô lưới */
+  height: auto;
+  /* Tự động tính toán chiều cao dựa trên tỷ lệ của hình ảnh */
+  margin-top: 50px;
 }
