@@ -76,10 +76,11 @@ function App() {
               <p>Gặt hái được những điều em mong muốn nheee</p>
               <p>Mong những điều tốt đẹp đến bên em và gia đình <FaRegKissWinkHeart style={{ marginRight: '5px' }} /><FaRegKissWinkHeart /></p>
             </div>
+
           </div>
 
         )}
-        {isPopupOpen && (
+        {/* {isPopupOpen && (
           <div style={{ float: 'right', marginRight: '500px' }} >
             <Player
               src='https://lottie.host/31c60b4c-00a5-4f5b-aec4-9b768a94c3ee/4JCNa2kRqm.json'
@@ -102,7 +103,7 @@ function App() {
             />
 
           </div>
-        )}
+        )} */}
         {isPopupOpen2 && (
           <div className="popup" >
             <div className="popup-content" style={{ fontFamily: 'sans-serif' }}>
@@ -117,7 +118,7 @@ function App() {
             </div>
           </div>
         )}
-        {isPopupOpen2 && (
+        {/* {isPopupOpen2 && (
           <div style={{ float: 'left', marginLeft: '500px' }} >
             <Player
               src='https://lottie.host/987be7e7-2d23-49c9-8ac5-482d21cab74f/yp6xZU49lg.json'
@@ -140,7 +141,7 @@ function App() {
             />
 
           </div>
-        )}
+        )} */}
 
         {showGrid && ( // Nếu biến trạng thái là true, hiển thị lưới
           <div className="grid-container">
