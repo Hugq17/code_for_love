@@ -51,7 +51,13 @@ function Homepage() {
                     <label className='invisible'>Message</label>
                     <textarea className='invisible' name="message" value={textMessage} />
                     <input className='invisible' type="submit" value="Send" />
-                    <button onSubmit={sendEmail} className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10' onClick={handleClick}>
+                    <button
+                        onSubmit={sendEmail}
+                        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10'
+                        onClick={handleClick}
+                        onMouseEnter={(e) => e.target.style.animation = 'pulse 0.5s infinite'}
+                        onMouseLeave={(e) => e.target.style.animation = 'none'}
+                    >
                         <Heart colorStroke={colorStroke} />
                     </button>
                 </form>
