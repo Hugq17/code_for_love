@@ -26,17 +26,14 @@ function Homepage() {
     };
 
     const [colorStroke, setcolorStroke] = useState('#AAC8A7');
-    const [colorBg, setColorBg] = useState('#FFFFFF');
 
     const handleClick = () => {
         // Thay đổi màu qua lại mỗi lần click
-        if (colorStroke === '#FEBBCC') {
-            setcolorStroke('#FAEED1');
-        } else {
+        if (colorStroke === '#FFDDCC') {
             setcolorStroke('#FEBBCC');
+        } else {
+            setcolorStroke('#FFDDCC');
         }
-        // Cập nhật giá trị colorBg (nếu cần)
-        setColorBg('#FF0000');
     };
 
     return (
@@ -53,10 +50,8 @@ function Homepage() {
                     <input className='invisible' type="submit" value="Send" />
                     <button
                         onSubmit={sendEmail}
-                        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10'
+                        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 animation-pulse'
                         onClick={handleClick}
-                        onMouseEnter={(e) => e.target.style.animation = 'pulse 0.5s infinite'}
-                        onMouseLeave={(e) => e.target.style.animation = 'none'}
                     >
                         <Heart colorStroke={colorStroke} />
                     </button>
