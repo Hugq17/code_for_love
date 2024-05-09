@@ -1,37 +1,47 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 const Login = ({ updateStatus }) => {
   const [email, setEmail] = useState("");
-  const [Password, setPassword] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const goToLogin = () => {
-    navigate("/login");
-  };
+
   const handleInputChangeEmail = (event) => {
     setEmail(event.target.value);
   };
+
   const handleInputChangePassword = (event) => {
     setPassword(event.target.value);
   };
+
   const handleLogin = () => {
-    if (email == "Nghi" && Password == "1") {
+    if (email === "Nghi" && password === "1") {
       updateStatus();
       navigate("/dashboard");
     }
   };
+
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center h-screen">
       <input
+        className="border border-gray-400 rounded-md px-3 py-2 mb-4"
         value={email}
         placeholder="Email"
         onChange={handleInputChangeEmail}
       />
       <input
-        value={Password}
+        className="border border-gray-400 rounded-md px-3 py-2 mb-4"
+        value={password}
         placeholder="Password"
+        type="password"
         onChange={handleInputChangePassword}
       />
-      <button onClick={handleLogin}>Đăng nhập</button>
+      <button
+        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        onClick={handleLogin}
+      >
+        Đăng nhập
+      </button>
     </div>
   );
 };

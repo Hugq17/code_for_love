@@ -141,13 +141,14 @@ const Dashboard = () => {
       {uploadedImages.length > 0 && (
         <div className="mt-4 container mx-auto">
           <h2 className="text-lg font-semibold">Uploaded Images</h2>
-          <div className="mt-2 masonry sm:masonry-sm md:masonry-md">
+          <div className="mt-2 grid grid-cols-3 gap-4">
             {uploadedImages.map((url, index) => (
-              <div key={index} className="rounded-lg mb-6 break-inside">
+              <div key={index} className="relative">
                 <img
                   src={url}
                   alt={`Uploaded ${index}`}
-                  className="h-auto max-w-full rounded-lg"
+                  className="max-w-full h-auto rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+                  style={{ maxWidth: "150px" }} // Thiết lập kích thước tối đa của hình ảnh
                 />
               </div>
             ))}
