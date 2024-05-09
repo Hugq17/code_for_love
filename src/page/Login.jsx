@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const Login = () => {
+const Login = ({ updateStatus }) => {
   const [email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -15,6 +15,7 @@ const Login = () => {
   };
   const handleLogin = () => {
     if (email == "Nghi" && Password == "1") {
+      updateStatus();
       navigate("/dashboard");
     }
   };
