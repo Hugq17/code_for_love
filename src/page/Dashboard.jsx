@@ -1,4 +1,3 @@
-/* eslint-disable default-case */
 import React, { useEffect, useState } from "react";
 import { storage } from "../config/firebaseConfig";
 import {
