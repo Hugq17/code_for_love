@@ -1,8 +1,20 @@
 .background-image {
-    background-image: url('/src/assets/Img/homepage.jpg');
+    background-image: url('/src/assets/Img/art1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh; /* Chiều cao bằng với chiều cao của màn hình */
   }
   
-  
+  .background-image1 {
+    background-image: url('/src/assets/Img/art2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Chiều cao bằng với chiều cao của màn hình */
+  }
+
+  .background-image2 {
+    background-image: url('/src/assets/Img/art3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Chiều cao bằng với chiều cao của màn hình */
+  }
