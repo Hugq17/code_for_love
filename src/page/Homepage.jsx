@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/Homepage.css";
 import { Player } from "@lottiefiles/react-lottie-player";
-import chilling from "../assets/lotties/chilling.json";
+import run from "../assets/lotties/run.json";
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -9,9 +10,10 @@ const Homepage = () => {
     navigate("/login");
   };
   return (
-    <div className="bg-slate-500 h-screen">
-      <p>Trang home page nè</p>
-      <button onClick={goToLogin}>Login</button>
+    <div className="background-image relative">
+      <button onClick={goToLogin} className="absolute bottom-0 right-32 w-full">
+        <Player autoplay loop src={run} className="w-2/3"></Player>
+      </button>
     </div>
   );
 };

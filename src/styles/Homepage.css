@@ -1,0 +1,8 @@
+.background-image {
+    background-image: url('/src/assets/Img/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Chiều cao bằng với chiều cao của màn hình */
+  }
+  
+  
