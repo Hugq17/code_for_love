@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
 import moon from "../assets/lotties/moon.json";
+import "../styles/Homepage.css";
 
 const Login = ({ updateStatus }) => {
   const [email, setEmail] = useState("");
@@ -25,28 +26,30 @@ const Login = ({ updateStatus }) => {
   };
 
   return (
-    <div className="flex h-screen w-full">
-      <div className="bg-[#350184] w-1/2 h-screen flex">
-        <Player autoplay loop src={moon} className="w-full"></Player>
-      </div>
-      <div className="flex items-center p-40">
-        <form onSubmit={handleLogin} className="flex flex-col items-center">
-          <p className="text-6xl">Code For Love</p>
-          <div className="mt-10">
+    <div className="login-image">
+      <div className="flex items-center p-40 w-full">
+        <form
+          onSubmit={handleLogin}
+          className="flex flex-col items-center w-full"
+        >
+          <p className="text-6xl pixelify-sans text-white w-screen flex justify-center">
+            For you
+          </p>
+          <div className="mt-10 w-full flex justify-center">
             <input
               value={email}
               placeholder="Username"
               onChange={handleInputChangeEmail}
-              className="bg-[#F1F1F1] p-3 rounded-md w-full"
+              className="bg-[#F1F1F1] p-3 rounded-md"
             />
           </div>
-          <div className="mt-1 mb-8">
+          <div className="mt-1 mb-8 w-full flex justify-center">
             <input
               placeholder="Password"
               value={password}
               type="password"
               onChange={handleInputChangePassword}
-              className="bg-[#F1F1F1] p-3 rounded-md w-full"
+              className="bg-[#F1F1F1] p-3 rounded-md"
             />
           </div>
           <button

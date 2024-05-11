@@ -18,3 +18,20 @@
     background-position: center;
     height: 100vh; /* Chiều cao bằng với chiều cao của màn hình */
   }
+
+  .login-image {
+    background-image: url('/src/assets/Img/login.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Chiều cao bằng với chiều cao của màn hình */
+  }
+
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
