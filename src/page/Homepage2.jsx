@@ -12,7 +12,7 @@ const Homepage2 = () => {
   return (
     <div className="background-image2 relative">
       <p className="text-white text-3xl">2024</p>
-      <button onClick={goToLogin} className="absolute bottom-0 left-32 w-full">
+      <button onClick={goToLogin} className="absolute bottom-0 left-0 w-full">
         <Player autoplay loop src={run} className="w-2/3"></Player>
       </button>
     </div>
