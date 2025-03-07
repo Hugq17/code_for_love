@@ -1,6 +1,9 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ref, uploadBytesResumable, getDownloadURL, listAll, deleteObject } from "firebase/storage";
 import { storage } from "./firebaseConfig";
+
+// Lấy mật khẩu từ biến môi trường
+const PASSWORD = import.meta.env.VITE_SECRET_PASSWORD; // Nếu dùng CRA thì đổi thành: process.env.REACT_APP_SECRET_PASSWORD
 
 const UploadImage = () => {
   const [images, setImages] = useState([]);
@@ -27,6 +30,15 @@ const UploadImage = () => {
       .catch((error) => console.error("Lỗi tải danh sách ảnh:", error));
   };
 
+  const checkPassword = () => {
+    const userPassword = prompt("🔑 Nhập mật khẩu:");
+    if (userPassword !== PASSWORD) {
+      alert("❌ Sai mật khẩu!");
+      return false;
+    }
+    return true;
+  };
+
   const handleImageChange = (e) => {
     if (e.target.files.length > 0) {
       setImages([...e.target.files]);
@@ -34,6 +46,7 @@ const UploadImage = () => {
   };
 
   const handleUpload = () => {
+    if (!checkPassword()) return;
     if (images.length === 0) return alert("Vui lòng chọn ảnh!");
 
     setUploading(true);
@@ -75,6 +88,7 @@ const UploadImage = () => {
   };
 
   const handleDelete = (path) => {
+    if (!checkPassword()) return;
     const confirmDelete = window.confirm("Bạn có chắc chắn muốn xóa ảnh này?");
     if (!confirmDelete) return;
 
